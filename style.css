@@ -1,0 +1,205 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s;
+    /* Added box shadow and font size for depth and visual interest */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+}
+
+header:hover {
+    background-color: #005bb5;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #0073e6;
+    transition: background-color 0.3s;
+    /* Added box shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 4px;
+    /* Added box shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+    color: #0073e6;
+    transition: color 0.3s; /* Added transition for color change */
+}
+
+h2:hover {
+    color: #005bb5; /* Change color on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    /* Added box shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Diagrams Styles */
+.diagram-headings {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+
+.diagrams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diagram-image {
+    width: 45%;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.diagram-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s;
+    /* Added box shadow for depth */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer:hover {
+    background-color: #005bb5;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.diagram-headings {
+    align-items: center;
+    gap: 195px;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    header, nav, main, footer {
+        margin: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .diagram-headings {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .diagrams {
+        flex-direction: column;
+    }
+
+    .diagram-image {
+        width: 100%;
+    }
+}
+
+#newegg-logo {
+    width: 120px; /* Adjust the width as needed */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    margin-left: 45px;
+}
+
+.buy-hardware-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 450px;
+    margin-top:  -80px;
+}
+
+.buy-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px; /* Adjust the margin as needed */
+}
+
+.buy-logo {
+    max-width: 150px; /* Adjust the maximum width if necessary */
+    margin-top: -90px; /* Adjust the negative margin to move the image up */
+    margin-left: auto; /* Move the image to the right */
+    margin-right: 250px; /* Move the image slightly to the left */
+    display: block; /* Ensure the image behaves as a block element */
+}
